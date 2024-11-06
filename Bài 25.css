@@ -1,0 +1,107 @@
+body {
+  font-family: Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #FF4D4D;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+/* Nav */
+nav {
+  background-color: #6DFFB9;
+  padding: 15px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 20px;
+  padding-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav li:last-child {
+  padding-right: 0;
+}
+
+/* Footer */
+footer {
+  background-color: #006EFF;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Section */
+section {
+  max-width: 2000px; /* Tăng chiều rộng tối đa của section */
+  margin: 30px auto; /* Tăng khoảng cách với phần trên/dưới */
+  padding: 30px; /* Tăng khoảng cách bên trong */
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 20px; /* Tăng kích thước font chữ */
+  background-color: #FFE686;
+  border-bottom: 3px solid #A6A6A6; /* Tăng độ dày của viền */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ để nổi bật */
+}
+
+/* Styling for figure and image */
+figure {
+  margin: 0 30px 0 0; /* Tăng khoảng cách giữa ảnh và văn bản */
+  max-width: 350px; /* Tăng kích thước tối đa của ảnh */
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+figcaption {
+  font-size: 16px; /* Tăng kích thước font cho chú thích */
+  text-align: center;
+  color: #333;
+  margin-top: 8px;
+}
+
+p {
+  max-width: 1500px; /* Tăng giới hạn chiều rộng của văn bản */
+}
+
+/* Media Query cho các thiết bị di động */
+@media (max-width: 768px) {
+  section {
+    padding: 20px;
+    font-size: 18px;
+    max-width: 100%;
+  }
+
+  figure {
+    max-width: 80%;
+    margin: 0 0 20px 0;
+  }
+
+  p {
+    max-width: 100%;
+    text-align: center;
+  }
+}
